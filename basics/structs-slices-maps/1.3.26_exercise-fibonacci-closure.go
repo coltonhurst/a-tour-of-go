@@ -23,13 +23,13 @@ func fibonacciWithSlices() func() int {
 		switch len(nums) {
 		case 0:
 			nums = append(nums, 0)
-			toReturn =  nums[0]
+			toReturn = nums[0]
 		case 1:
 			nums = append(nums, 1)
-			toReturn =  nums[1]
+			toReturn = nums[1]
 		default:
-			nums = append(nums, nums[len(nums) - 2] + nums[len(nums) - 1])
-			toReturn = nums[len(nums) - 1]
+			nums = append(nums, nums[len(nums)-2]+nums[len(nums)-1])
+			toReturn = nums[len(nums)-1]
 		}
 
 		return toReturn
@@ -41,7 +41,7 @@ func fibonacciSimple() func() int {
 	a := 0
 	b := 1
 	c := 0
-	
+
 	return func() int {
 		if n == 0 {
 			n++

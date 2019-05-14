@@ -21,13 +21,13 @@ func Pic(dx, dy int) [][]uint8 {
 	// make the slice of uint8 slices
 	// of length dy
 	result := make([][]uint8, dy)
-	
+
 	// range through result, and set each 1st dimension
 	// value to be a uint8 slice
 	for i := range result {
 		result[i] = make([]uint8, dx)
 	}
-	
+
 	// range through each value of result, and set
 	// the value based on where we are in the range
 	for i := range result {
@@ -35,7 +35,7 @@ func Pic(dx, dy int) [][]uint8 {
 			result[i][j] = uint8(0) + uint8(j)
 		}
 	}
-	
+
 	return result
 }
 

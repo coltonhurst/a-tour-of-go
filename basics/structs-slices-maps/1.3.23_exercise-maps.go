@@ -17,12 +17,12 @@ import (
 )
 
 func WordCount(s string) map[string]int {
-	words := strings.Fields(s)			// splits the string s into a string array, splitting by spaces, testing with 'unicode.IsSpace'
-	wordCount := make(map[string]int)	// expanded: var wordCount map[string]int = make(map[string]int)
-	
-	for _, word := range words {		// range through each word in 'words'
-		_, exists := wordCount[word]	// wordCount is the map (the keys are strings, values are ints), get if the word exists in the map
-		
+	words := strings.Fields(s)        // splits the string s into a string array, splitting by spaces, testing with 'unicode.IsSpace'
+	wordCount := make(map[string]int) // expanded: var wordCount map[string]int = make(map[string]int)
+
+	for _, word := range words { // range through each word in 'words'
+		_, exists := wordCount[word] // wordCount is the map (the keys are strings, values are ints), get if the word exists in the map
+
 		if exists {
 			wordCount[word] = wordCount[word] + 1
 		} else {

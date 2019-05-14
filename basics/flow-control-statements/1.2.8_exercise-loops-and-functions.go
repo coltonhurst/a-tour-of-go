@@ -28,9 +28,9 @@ func Sqrt(x float64) float64 {
 func SqrtAccurate(x float64) float64 {
 	var z float64 = 1
 	var z_previous float64 = 0
-	var threshold float64 = 0.0000000001	// 1E-10
+	var threshold float64 = 0.0000000001 // 1E-10
 
-	for math.Abs(z - z_previous) >= threshold {
+	for math.Abs(z-z_previous) >= threshold {
 		//fmt.Println(z)	// uncomment to see z become more precise
 		z_previous = z
 		z -= (z*z - x) / (2 * z)
