@@ -1,3 +1,10 @@
+/*
+	Notes 2.5
+
+	Rewriting methods from 2.4 as functions... notice, with pointers,
+	we can acheive similar (or, the same) functionality.
+*/
+
 package main
 
 import (
